@@ -1,46 +1,122 @@
 body {
-    background-color: #94BFA7;
-    color: #2F2F2F;
-}
-.name {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
-    transition: all 1s ease-in-out;
+    color: #02033B;
 }
-.name:hover {
-    background-color: aqua;
-}
-
-.container {
-    width: 70%;
-    margin: 0 auto;
-}
-.about {
-    display: flex;
-    gap: 25px   ;
-    align-items: center;
+.header {
     position: relative;
-}
-.about::before {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    position: absolute;
-}
-.avatar {
-    border-radius: 24pt;
-    max-width: 300px;
     width: 100%;
-    box-shadow: 5px 5px 15px black;
+    height: 90px;
+    background-color: #f7f7f7;
+    box-shadow: inset 0 -25px 30px -50px rgba(0, 0, 0, .5);
 }
-table tr{
-    transition: all 0.5s ease-in-out;
+.menu {
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    font-size: 30px;
+    
 }
-table tr:hover {
-    background-color: aqua;
+.menu img {
+    position: absolute;
+    width:auto;
+    height: 60%;
+    top:50%;
+    transform: translate(0, -50%);
+}
+.menu li {
+    display: inline;
+    text-decoration: none;
+    margin: 0 1em;
+}
+.nav {
+    list-style: none;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    left: 35%;
+}
+.menu .but {
+    position: absolute;
+    transform: translate(0,-50%);
+    right: 0;
+    top:50%;
+    background-color: #4335DE;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.bgmain {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.bgimage {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 770px;
+    height: auto;
+    padding: 25px;
+}
+.maincontent {
+    position: relative;
+    top: 0;
+    margin: auto;
+    margin-top: 7%;
+    width: 1200px;
+    height: 500px;
+}
+.text {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    font-size: 20px;
+}
+h1 {
+    font-size: 54px;
+    padding-bottom: 20px;
+}
+.text .but1 {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    background-color: #FFC247;
+    color: #02033B;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.text .but2 {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    border: 3px solid #02033B;
+    left: 50%;
+    bottom: 0;
+    color: #02033B;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.phone {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    height: 500px;
+    width: auto;
+    float: left;
 }
