@@ -1,0 +1,126 @@
+.item {
+    /* Стили для элемента-контейнера (например, рамка, отступы) */
+    display: flex; /* Пример: делаем элемент контейнером flexbox */ 
+  }
+  
+  .itemLeft {
+    /* Стили для левой части элемента (например, ширина, расположение) */
+    max-width: 60%;
+}
+  
+  .itemImg {
+    /* Стили для контейнера изображения (например, размеры, расположение) */
+      height: auto;
+      position: relative; 
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+  .itemImg img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .itemImgInfo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px;
+  }
+  .itemImgInfo *{
+    color: rgb(255, 255, 255);
+font-family: Montserrat Alternates;
+font-size: 30px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: 0%;
+text-align: right;
+text-transform: uppercase;
+  }
+  
+  .itemText {
+    /* Стили для текстового содержимого (например, отступы, шрифт) */
+     padding: 12px 32px;
+     background: rgb(111, 128, 30);
+     display: flex;
+     flex-direction: column;
+     gap: 36px;
+  }
+  
+  .itemTitle{
+    color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 500;
+line-height: 37px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+  }
+
+  .itemTextContent{
+    color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: lowercase;
+  }
+  .itemRight {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .item{
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .itemSlogan{
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+  }
+  .itemSlogan span{
+    color: #000;
+  }
+
+  .itemSloganSubtitle{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+  }
+.itemBtn span:last-child{
+    background: rgb(111, 128, 30);
+    padding: 23px 30px;
+    display: block;
+    width: fit-content;
+    color: #fff;
+    text-transform: uppercase;
+}
+.itemBtn{
+    display: flex;
+    align-items: center;
+}
+.itemFavirote{
+  width: 65px;
+  height: 100%;
+  padding: 5px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  
